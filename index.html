@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scientific Calculator</title>
+<link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+
+<div id="welcome-box">
+  <h1 style="font-size: 24px; color: #333;">Welcome to Madhuna's Calculator</h1>
+  <p style="font-size: 16px; color: #555;">Enjoy your calculations with style!</p>
+</div>
+
+<video id="video-background" autoplay loop muted>
+  <source src="maths.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+ 
+  
+ 
+  <!-- Calculator buttons and input -->
+    <div class="calculator">
+      <input type="text" id="display" disabled>
+      <input type="button" class="button-64" value="sin" onclick="trigFunction('sin')">
+      <input type="button" class="button-64" value="cos" onclick="trigFunction('cos')">
+      <input type="button" class="button-64" value="tan" onclick="trigFunction('tan')">
+      <input type="button" class="button-64" value="(" onclick="addToDisplay('(')">
+      <input type="button" class="button-64" value=")" onclick="addToDisplay(')')">
+      <input type="button" class="button-64" value="√" onclick="addToDisplay('Math.sqrt(')">
+      <input type="button" class="button-64" value="^" onclick="addToDisplay('')">
+      <input type="button" class="button-64" value="Clear" onclick="clearDisplay()">
+      <input type="button" class="button-64" value="%" onclick="addToDisplay('%')">
+      <input type="button" class="button-64" value="/" onclick="addToDisplay('/')">
+      <input type="button" class="button-64" value="0" onclick="addToDisplay('0')">
+      <input type="button" class="button-64" value="1" onclick="addToDisplay('1')">
+      <input type="button" class="button-64" value="2" onclick="addToDisplay('2')">
+      <input type="button" class="button-64" value="*" onclick="addToDisplay('*')">
+      <input type="button" class="button-64" value="-" onclick="addToDisplay('-')">
+      <input type="button" class="button-64" value="3" onclick="addToDisplay('3')">
+      <input type="button" class="button-64" value="4" onclick="addToDisplay('4')">
+      <input type="button" class="button-64" value="5" onclick="addToDisplay('5')">
+      <input type="button" class="button-64" value="+" onclick="addToDisplay('+')">
+      <input type="button" class="button-64" value="." onclick="addToDisplay('.')">
+      <input type="button" class="button-64" value="6" onclick="addToDisplay('6')">
+      <input type="button" class="button-64" value="7" onclick="addToDisplay('7')">
+      <input type="button" class="button-64" value="8" onclick="addToDisplay('8')">
+      <input type="button" class="button-64" value="9" onclick="addToDisplay('9')">
+      <input type="button" class="button-64" value="=" onclick="calculate()">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
